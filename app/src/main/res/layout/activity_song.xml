@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SongActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/iGuitar"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="#FAFAFA"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/iguitarlogga"
+            android:maxWidth="60dp"
+            android:maxHeight="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:onClick="openHome"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Learn two easy songs!"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Test the new chords you´ve learned in these two easy songs. Simply listen to the songs if you don't know them and play along with the chords and lyrics below us."
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ring of fire - Johnny Cash"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:contentDescription="RingOfFire"
+            android:layout_width="wrap_content"
+            android:id="@+id/ringOfFire"
+            android:adjustViewBounds="true"
+            android:maxWidth="500dp"
+            android:maxHeight="500dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ring_of_fire"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bad moon rising - Creedence CR"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <ImageView
+            android:contentDescription="BadMoonRising"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/badMoonRising"
+            android:adjustViewBounds="true"
+            android:maxWidth="350dp"
+            android:maxHeight="350dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bad_moon"
+            android:layout_marginTop="10dp"
+            />
+    </TableLayout>
+
+</ScrollView>

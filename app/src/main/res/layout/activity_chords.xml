@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:fillViewport="false">
+    tools:context=".ChordsActivity">
+
+    <!-- Information hämtad från: https://www.justinguitar.com/en/BC-112-A-chord.php -->
+    <!-- https://www.justinguitar.com/en/BC-132-C-chord.php -->
+    <!-- https://www.justinguitar.com/en/BC-111-D-chord.php -->
+    <!-- https://www.justinguitar.com/en/BC-131-G-chord.php -->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/iGuitar"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="#FAFAFA"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/iguitarlogga"
+        android:maxWidth="60dp"
+        android:maxHeight="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="openHome"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learn four easy chords!"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="You are soon going to learn your first song, but first we need to learn some chords. The first chord you see below is the A-chord."
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="230dp"
+        android:maxHeight="230dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/a_chord"
+        android:layout_marginTop="10dp"
+        />
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Hear it!"
+        android:onClick="playA"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttonshape"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Stop"
+            android:onClick="stop"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttonshape"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="With the A-chord, you place all your fingers are at the 2nd fret. You start with placing your 1st finger is on the fourth string (D-String); Then you place your 2nd finger on the third string (G-String); Lastly place your 3rd finger on the second string (B-String). The first (thinnest) and fifth strings are played open. Don't play the thickest (sixth) string."
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxWidth="230dp"
+            android:maxHeight="230dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/c_chord"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Hear it!"
+            android:onClick="playC"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttonshape"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Stop"
+            android:onClick="stop"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttonshape"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The C-Chord can be a bit of a challenge because of the big finger stretch. Your 1st finger is placed on the second string (B-String) on the 1st-fret; Then place your 2nd finger on the fourth string (D-String) on the 2nd-fret; And lastly place your 3rd finger on the fifth string (A-String). With this chord the 3rd finger will often mute the D-String, so be sure to practice alot!"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxWidth="230dp"
+            android:maxHeight="230dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/d_chord"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Hear it!"
+            android:onClick="playD"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttonshape"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Stop"
+            android:onClick="stop"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttonshape"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To learn the D-chord you first place your 1st finger on the third string (G-String), 2nd fret; the 2nd finger on the sixth string (e-String), on the 2nd fret; Lastly put your 3rd finger on the second string (B-String) on the 3rd fret then you are done!."
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxWidth="230dp"
+            android:maxHeight="230dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/g_chord"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Hear it!"
+            android:onClick="playG"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttonshape"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Stop"
+            android:onClick="stop"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttonshape"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The last chord you will learn in this lesson is the G-chord. The G-Chord can be challengeable because of the finger stretch involved like the C-chord, but all it takes is practice! Place your 1st finger on the fifth string (A-String),on the 2nd fret; Then place your 2nd finger on the sixth string (E-String) on the third-fret; And then your 3rd finger on the first string (e-String) on the 3rd fret."
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnParts"
+            android:onClick="openSongActivity"
+            android:textSize="12dp"
+            android:text="Test the new chords on some songs!"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttonshape"
+            />
+
+    </TableLayout>
+
+</ScrollView>

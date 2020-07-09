@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PartTestActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/iGuitar"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="#FAFAFA"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/iguitarlogga"
+            android:maxWidth="60dp"
+            android:maxHeight="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:onClick="openHome"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test your knowledge!"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="300dp"
+        android:maxHeight="300dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/acousticpartsnumbers"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simply assign the right part to the right number. Start with the first part!"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerParts"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        />
+
+    <Button
+        android:id="@+id/btnChoice"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:onClick="onClickSelected"
+        android:text="Check your answer"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttonshape"/>
+    </TableLayout>
+
+</ScrollView>

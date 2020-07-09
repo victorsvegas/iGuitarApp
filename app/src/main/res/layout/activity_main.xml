@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/iguitarlogga"
+        android:maxWidth="60dp"
+        android:maxHeight="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:id="@+id/btnParts"
+        android:onClick="openParts"
+        android:textSize="17sp"
+        android:text="Guitar parts"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttonshape"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:id="@+id/btnTheory"
+        android:onClick="openTheory"
+        android:text="Music Theory"
+        android:textSize="17sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttonshape" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:id="@+id/btnChords"
+        android:onClick="openChords"
+        android:textSize="17sp"
+        android:text="Learn Chords and Songs"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttonshape"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:id="@+id/btnMap"
+        android:onClick="openMap"
+        android:textSize="17sp"
+        android:text="Find music stores near you"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttonshape"/>
+
+</TableLayout>
+

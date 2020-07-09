@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TheoryActivity">
+
+    <!-- Information hämtad från: https://www.guitarlessons.com/guitar-lessons/guitar-scales/chromatic-guitar-scale -->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageButton
+        android:id="@+id/iGuitar"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="#FAFAFA"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/iguitarlogga"
+        android:maxWidth="60dp"
+        android:maxHeight="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="openHome"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learn some music theory!"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="We are going to start out by learning all the notes on the fretboard. This is one of the simplest steps you can take to elevate your playing."
+        android:textColor="#000000"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The chromatic scale"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="We are going to start with learning the chromatic scale. The chromatic scale is a series of 12 tones that ascend or descend in half-step increments, or one fret at a time. This scale names every note on the neck, in succession.
+Before you start playing around with the guitar, it’s a good to memorize the scale itself without playing the notes on the guitar. There are two rules you should follow when memorizing the chromatic scale.
+
+First, between the notes you’ll find sharps (#) or flats (b). A sharp raises a tone by one fret, and a flat lowers a note by one fret. Secondly, the notes follow a sequence that starts on C and ends on B (C D E F G A B).
+
+By using these two rules you should arrive at this scale spelling: C-C# |  D-D# | E-F-F# | G-G# | A-A# | B. The only thing that may change is your start note, as the chromatic scale can start on any note.
+
+There are two exceptions to this rule: the note pairs B-C and E-F are just a half step apart, so there is no sharp or flat between them."
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:text="(Picture 1) is a grid of all the notes on the fretboard, ending at the 12th fret. See how the notes at the 12th fret are the same as the open strings on which you started. That’s what is known as an octave—the same pitch, only one register higher.
+The scale then recycles itself up the rest of the neck to it's end (for example, the 13th fret has the same note names as the first)."/>
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxWidth="300dp"
+            android:maxHeight="300dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/notes"
+            android:layout_marginTop="10dp"
+            />
+
+    </TableLayout>
+
+</ScrollView>

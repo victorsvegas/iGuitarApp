@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PartsActivity">
+
+    <ImageButton
+        android:id="@+id/iGuitar"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="#FAFAFA"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/iguitarlogga"
+        android:maxWidth="60dp"
+        android:maxHeight="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="openHome"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learn the parts of an acoustic guitar!"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Before we begin playing it would be good to know a bit more about your instrument. In the picture under us you can study the different parts of an acoustic guitar and then test yourself in a quiz when you are ready!"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textStyle="normal"
+        android:textSize="10sp"
+        android:layout_marginTop="5dp"
+        />
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="330dp"
+        android:maxHeight="330dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/acousticparts"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:id="@+id/btnParts"
+        android:onClick="openPartTest"
+        android:textSize="12dp"
+        android:text="Test yourself!"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttonshape"/>
+
+</TableLayout>
